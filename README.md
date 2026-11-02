@@ -31,6 +31,9 @@ Provides instructions for setting up MCP on Gemini CLI.
 - Lists the necessary `/mcp auth` commands for Calendar, Chat, Drive, Gmail, and People.
 - Explains how to verify the connection using `/mcp list`.
 
+### `claude_mcp_setup.sh`
+Registers the Gmail, Calendar and People MCP servers with Claude Code, using the OAuth client saved by `save_oauth.sh`. Then run `/mcp` inside Claude Code to authenticate each one.
+
 ## Prerequisites
 - [Google Cloud SDK (gcloud)](https://cloud.google.com/sdk/docs/install)
 
