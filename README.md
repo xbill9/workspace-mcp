@@ -7,7 +7,7 @@ This workspace provides a set of scripts to initialize and manage a Google Cloud
 ### `init.sh`
 Initializes the Google Cloud environment.
 - Sets the project ID.
-- Enables necessary Google Cloud APIs (Gmail, Drive, Calendar, Chat, People).
+- Enables necessary Google Cloud APIs (Gmail, Drive, Calendar, Chat, People, Docs, Sheets, Slides).
 - Enables the corresponding MCP APIs.
 - Creates a `.env` file with default configurations.
 - Configures Application Default Credentials (ADC).
@@ -32,7 +32,7 @@ Provides instructions for setting up MCP on Gemini CLI.
 - Explains how to verify the connection using `/mcp list`.
 
 ### `claude_mcp_setup.sh`
-Registers the Gmail, Calendar and People MCP servers with Claude Code, using the OAuth client saved by `save_oauth.sh`. Then run `/mcp` inside Claude Code to authenticate each one.
+Registers the Gmail, Calendar, People, Chat, Docs, Sheets and Slides MCP servers with Claude Code, using the OAuth client saved by `save_oauth.sh`. Then run `/mcp` inside Claude Code to authenticate each one.
 
 ## Prerequisites
 - [Google Cloud SDK (gcloud)](https://cloud.google.com/sdk/docs/install)

@@ -24,12 +24,18 @@ gcloud services enable gmail.googleapis.com \
 drive.googleapis.com \
 calendar-json.googleapis.com \
 chat.googleapis.com \
-people.googleapis.com --project=$PROJECT_ID
+people.googleapis.com \
+docs.googleapis.com \
+sheets.googleapis.com \
+slides.googleapis.com --project=$PROJECT_ID
 
 gcloud services enable calendarmcp.googleapis.com \
 	chatmcp.googleapis.com \
 	drivemcp.googleapis.com \
-	gmailmcp.googleapis.com --project=$PROJECT_ID
+	gmailmcp.googleapis.com \
+	docsmcp.googleapis.com \
+	sheetsmcp.googleapis.com \
+	slidesmcp.googleapis.com --project=$PROJECT_ID
 
 cat <<EOF > .env
 GOOGLE_GENAI_USE_VERTEXAI=True

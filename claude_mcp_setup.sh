@@ -19,6 +19,10 @@ add() {
 add gmail    https://gmailmcp.googleapis.com/mcp/v1
 add calendar https://calendarmcp.googleapis.com/mcp/v1
 add people   https://people.googleapis.com/mcp/v1
+add chat     https://chatmcp.googleapis.com/mcp/v1
+add docs     https://docsmcp.googleapis.com/mcp/v1
+add sheets   https://sheetsmcp.googleapis.com/mcp/v1
+add slides   https://slidesmcp.googleapis.com/mcp/v1
 
 echo ""
-echo "In Claude Code, run /mcp and authenticate gmail, calendar and people in the browser."
+echo "In Claude Code, run /mcp and authenticate gmail, calendar, people, chat, docs, sheets and slides in the browser."
