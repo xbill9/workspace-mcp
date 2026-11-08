@@ -55,6 +55,13 @@ if [ -z "$CLOUD_SHELL" ]; then
     fi
 fi
 
+# Automatically configure Antigravity (agy) MCP servers if OAuth credentials exist
+if [ -f "$HOME/client_id.txt" ] && [ -f "$HOME/client_secret.txt" ]; then
+    echo ""
+    echo "Configuring Antigravity (agy) MCP servers..."
+    ./agy_mcp_setup.sh
+fi
+
 echo "Environment setup"
 cat .env
 
