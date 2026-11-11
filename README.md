@@ -35,7 +35,7 @@ Provides instructions for setting up MCP on Gemini CLI.
 Registers the Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat, and People MCP servers in Antigravity (`~/.gemini/config/mcp_config.json`), using the OAuth client saved by `save_oauth.sh`. Then run `/mcp` in Antigravity CLI (`agy`) or use **Settings > Customizations > Installed MCP Servers** in Antigravity IDE/GUI to authenticate each one.
 
 ### `claude_mcp_setup.sh`
-Registers the Gmail, Calendar, People, Chat, Docs, Sheets and Slides MCP servers with Claude Code, using the OAuth client saved by `save_oauth.sh`. Then run `/mcp` inside Claude Code to authenticate each one.
+Registers the Gmail, Drive, Calendar, People, Chat, Docs, Sheets and Slides MCP servers with Claude Code at user scope (available in every project on this PC), using the OAuth client saved by `save_oauth.sh`. Then run `/mcp` inside Claude Code to authenticate each one.
 
 ### `codex_mcp_setup.sh`
 Registers the Gmail, Drive, Calendar, People, Chat, Docs, Sheets, and Slides MCP servers with Codex CLI (`~/.codex/config.toml`), using the OAuth client saved by `save_oauth.sh`. Then run `codex mcp login <server> --scopes <scopes>` or `/mcp` inside Codex to authenticate each one.
